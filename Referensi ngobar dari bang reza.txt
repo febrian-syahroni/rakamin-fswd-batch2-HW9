@@ -1,0 +1,41 @@
+Referensi ngobar malam ini ya :
+https://github.com/RezaNurRochmat13/ngobar-rest-api-express-sequelize
+
+Step nya untuk running
+
+1. Clone repo tersebut ke local masing2
+2. Open menggunakan VSCode
+3. Open terminal dan jalankan script `npm install` atau `yarn install`
+4. Setup database di file config.json di folder config
+5. Create `.env` file untuk menyimpan secret JWT
+6. Running migration untuk migrasi table nya dengan perintah `npx sequelize db:migrate`
+7.  Running seeding untuk sample data dengan perintah `npx sequelize db:seed:all`
+8. Running aplikasi dengan perintah `npm run play` atau `yarn play`
+9. Open menggunakan Postman sesuai dengan endpoint yang ada
+10. Register user dengan Postman
+11. Login user dengan Postman
+12. Akses masing2 endpoint
+
+NB : Impor collection disini yaa.
+
+Berikut adalah teknologi yang digunakan dalam dependensi yang tercantum dalam file `package.json` tersebut:
+
+1. **bcrypt**: bcrypt adalah sebuah library untuk mengenkripsi data, terutama digunakan untuk mengenkripsi password. Library ini menggunakan algoritma bcrypt yang aman dan sulit untuk dipecahkan.
+
+2. **dotenv**: dotenv adalah library yang digunakan untuk memuat variabel lingkungan (environment variables) dari file `.env`. Variabel lingkungan digunakan untuk menyimpan konfigurasi sensitif seperti kredensial basis data atau kunci API.
+
+3. **express**: express adalah kerangka kerja aplikasi web Node.js yang digunakan untuk membangun aplikasi server-side. Express menyediakan cara yang mudah untuk mengatur rute, mengelola permintaan HTTP, dan merespons tanggapan.
+
+4. **jsonwebtoken**: jsonwebtoken adalah library yang digunakan untuk membuat dan memvalidasi JSON Web Tokens (JWT) yang digunakan untuk mengamankan komunikasi antara server dan klien. JWT umumnya digunakan untuk otentikasi dan otorisasi.
+
+5. **morgan**: morgan adalah middleware logger untuk Express. Library ini digunakan untuk mencatat permintaan HTTP yang masuk ke server sehingga memudahkan dalam pemantauan dan debugging.
+
+6. **nodemon**: nodemon adalah utilitas pengembangan yang digunakan untuk memantau perubahan dalam kode sumber aplikasi dan secara otomatis memulai ulang server saat ada perubahan. Ini mempermudah proses pengembangan karena Anda tidak perlu secara manual memulai ulang server setiap kali Anda melakukan perubahan pada kode.
+
+7. **pg**: pg adalah driver PostgreSQL untuk Node.js. Driver ini digunakan untuk berinteraksi dengan basis data PostgreSQL dari aplikasi Node.js.
+
+8. **sequelize**: sequelize adalah ORM (Object-Relational Mapping) untuk Node.js yang kompatibel dengan beberapa jenis basis data relasional. Sequelize memudahkan interaksi dengan basis data dan menyediakan API yang konsisten dan terstruktur.
+
+9. **sequelize-cli**: sequelize-cli adalah command-line interface (CLI) untuk Sequelize. CLI ini menyediakan perintah yang berguna untuk mengelola migrasi basis data, menghasilkan model, dan menjalankan skrip basis data lainnya.
+
+Demikianlah teknologi yang digunakan dalam dependensi yang tercantum dalam file `package.json` tersebut.
