@@ -1,5 +1,40 @@
 /**
  * @swagger
+ * components:
+ *   schemas:
+ *     Movies:
+ *       type: object
+ *       required:
+ *         - title
+ *         - genre
+ *         - year
+ *       properties:
+ *         id:
+ *           type: string
+ *           description: The auto-generated id of the film
+ *         title:
+ *           type: string
+ *           description: The movies title
+ *         genre:
+ *           type: string
+ *           description: The genres of the movies
+ *         year:
+ *           type: string
+ *           description: The year of the movies released 
+ *         createdAt:
+ *           type: string
+ *           format: date
+ *           description: The date the movie was added
+ *       example:
+ *         id: d5fE_asz
+ *         title: The Nun
+ *         genre: Horror
+ *         year: "2019"
+ *         createdAt: 2020-03-10T04:05:06.157Z
+ */
+
+/**
+ * @swagger
  * tags:
  *    name: Movies
  *    description: The movies managing API
